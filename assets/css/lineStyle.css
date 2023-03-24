@@ -1,0 +1,179 @@
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("../../../img/fundob2.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#popUp {
+border-radius: 5px;
+position: fixed;
+top: 18%;
+left: 20%;
+width: 60%;
+height: 70vh;
+background-color: #ffc5f9;
+color: black;
+filter: drop-shadow(100%);
+z-index: 3;
+outline: 3px solid #540078;
+padding: 0;
+overflow: auto;
+filter: drop-shadow(0px 0px 1000px rgb(0, 0, 0));
+}
+
+#apagado {
+position: fixed;
+width: 100%;
+height: 100vh;
+z-index: 2;
+}
+
+.invisibleBack {
+display: none;
+}
+
+.visibleBack {
+background-color: #000000a6;
+display: visible;
+animation: backv 2s;
+}
+
+@keyframes backv {
+0% {
+background-color: #00000000;
+}
+
+100% {
+background-color: #000000a6;
+}
+}
+
+button#fechar {
+width: 30px;
+height: 30px;
+border: none;
+border-radius: 0 0 0 5px;
+background-color: #7e00b5;
+position: absolute;
+right: 0px;
+top: 0px;
+cursor: pointer;
+align-items: center;
+background-image: url(../../../img/x.png);
+background-size: 15px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+::-webkit-scrollbar {
+background-color: #7f00b5;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #b300ff;
+border-radius: 10px;
+}
+
+h2#nomePopUp {
+width: 30%;
+text-align: center;
+color: black;
+border-bottom: 3px solid #540078;
+margin: 20px auto 0 auto;
+}
+
+p#pPopUp {
+margin: 20px auto;
+width: 85%;
+background-color: rgba(127, 0, 181, 0.2);
+padding: 13px 33px;
+border-radius: 5px;
+}
+
+.visible {
+display: visible;
+animation: visibl 2s;
+}
+
+#imgPopUp {
+margin: 20px 7.5% 0 7.5%;
+width: 85%;
+height: 250px;
+border-radius: 5px;
+}
+
+.blur {
+filter: blur(1px);
+}
+
+@keyframes visibl {
+0% {
+display: none;
+top: -300px;
+}
+
+100% {
+display: visible;
+top: 18%;
+}
+}
+
+.invisible {
+display: none;
+}
+
+tr {
+display: flex;
+}
+
+td.tempos {
+margin: 0 50px;
+cursor: pointer;
+z-index: 1;
+}
+
+td#linha {
+background-image: url(../../../img/line.png);
+background-size: 10px 10px;
+background-position: center left;
+background-repeat: repeat-x;
+padding: 3px;
+width: 100%;
+position: relative;
+bottom: 27px;
+z-index: 0;
+}
+
+div.circulo {
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+width: 50px;
+height: 50px;
+background-color: #9a0078;
+border-radius: 100px;
+margin: 0 auto;
+border: 2px solid white;
+font-size: 15px;
+}
+
+p#texto {
+color: white;
+margin-right: 4px;
+}
+
+h1 {
+color: black;
+text-align: center;
+}
+
+p {
+color: black;
+width: 80%;
+margin: 10px auto;
+}
+    

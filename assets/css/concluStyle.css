@@ -1,0 +1,58 @@
+main {
+display: flex;
+}
+
+div#fundo1 {
+width: 20%;
+background-image: url(../../img/fundob4.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+div#fundo2 {
+width: 20%;
+background-image: url(../../img/fundob5.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+div#conteudo {
+color: black;
+width: 60%;
+background-image: url("../../../img/fundob1.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: local;
+padding: 20px;
+overflow: auto;
+text-align: center;
+}
+
+h1 {
+color: black;
+text-align: center;
+padding-bottom: 10px;
+}
+
+p {
+color: black;
+width: 80%;
+margin: 10px auto;
+text-align: justify;
+}
+
+section#abertura {
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0);
+position: fixed;
+color: rgba(255, 255, 255, 0);
+animation-name: aberturaTeste;
+animation-duration: 10s;
+animation-direction: alternate;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 5em;
+z-index: 1;
+}
